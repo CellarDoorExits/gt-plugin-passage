@@ -1,0 +1,56 @@
+{
+  "name": "gt-plugin-passage",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Passport stamps for Gas Town agents -- departure records and admission policies for cross-town migration",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cellar-door-entry": "^0.2.0",
+    "cellar-door-exit": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "SECURITY.md"
+  ],
+  "keywords": [
+    "gas-town",
+    "cellar-door",
+    "exit-protocol",
+    "entry-protocol",
+    "agent-lifecycle",
+    "multi-agent",
+    "polecats"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cellar-door-dev/gt-plugin-passage"
+  }
+}
